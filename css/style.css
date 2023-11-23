@@ -688,6 +688,9 @@ footer {
         font-size: 13px;
         margin-bottom: 23px;
     }
+    .about__logo {
+        display: none;
+    }
     .btn {
         padding: 13px 37px;
         margin: 0 auto;
@@ -728,9 +731,6 @@ footer {
     }
     .about__inner {
         flex-wrap: wrap;
-    }
-    .about__logo {
-        display: none;
     }
     .about__title {
         text-align: center;
