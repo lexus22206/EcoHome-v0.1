@@ -266,6 +266,7 @@ body._touch .build__bg {
     width: 100%;
     min-height: 100vh;
     object-fit: cover;
+    object-position: top;
     z-index: -1;
 }
 
