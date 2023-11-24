@@ -244,9 +244,12 @@ button {
 
 /* section build */
 
-body._touch .build,
-body._touch .build__bg {
+body._touch .build {
     min-height: 100dvh;
+}
+
+body._touch .build__bg {
+    height: 100dvh;
 }
 
 .build {
