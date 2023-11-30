@@ -466,20 +466,24 @@ body._touch .build__bg {
 
 .estimate__images {
     position: relative;
-    margin-left: 20px;
 }
 
-.estimate__images img {
-    max-width: 650px;
-    max-height: 406px;
+.estimate__image-notebook {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
-.estimate__images::after {
-    content: url(../images/notebook.png);
+.estimate__image-content {
+    width: 76%;
+    height: 79%;
     position: absolute;
-    top: -39px;
-    left: -102px;
+    top: 7.6%;
+    left: 12%;
+    z-index: 0;
 }
+
+
 
 
 
@@ -623,6 +627,36 @@ footer {
 
 /* responsive */
 
+@media (max-width: 992px) {
+    .about {
+        padding: 150px 0;
+    }
+    .about__section-title {
+        font-size: 30px;
+    }
+    .about__link {
+        font-size: 22px;
+    }
+    .about__sublink {
+        font-size: 16px;
+    }
+    .company__name {
+        font-size: 54px;
+    }
+    .company__text {
+        font-size: 14px;
+    }
+    .estimate {
+        padding: 150px 0;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+    .estimate__text {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .btn {
         font-size: 14px;
@@ -669,6 +703,16 @@ footer {
     }
     .block__company-text {
         font-size: 14px;
+    }
+    .estimate {
+        padding: 80px 0;
+    }
+    .estimate__inner {
+        flex-wrap: wrap;
+    }
+    .estimate__content {
+        margin-bottom: 20px;
+        text-align: center;
     }
 }
 
@@ -769,11 +813,23 @@ footer {
         margin: 0 20px 25px;
         font-size: 40px;
     }
+    .company__text {
+        font-size: 12px;
+    }
     .block__video {
         margin: 0 auto 24px;
     }
     .block__company-text {
         text-align: center;
+        font-size: 12px;
+    }
+    .estimate {
+        padding: 60px 0;
+    }
+    .section__title {
+        font-size: 26px;
+    }
+    .estimate__text {
         font-size: 12px;
     }
 }
