@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Inter:wght@300;400;600&family=Oranienbaum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -62,10 +63,10 @@
                             <p class="build__text">
                                 Ми збудуємо той будинок, про який ви мрієте
                             </p>
-                            <button class="build__btn btn">
-                                <img class="btn__arrow_right" src="images/arrow-white.svg" alt="arrow">
-                                Збудуй свій будинок
-                            </button>
+                            <a class="build__btn btn">
+                                <img class="btn__arrow btn__arrow_right" src="images/arrow-white.svg" alt="arrow">
+                                <p>Збудуй свій будинок</p>
+                            </a>
                         </div>
                         <button class="wrapper__scroll">
                             <img class="scroll__arrow" src="images/arrow-scroll.svg" alt="arrow">
@@ -194,6 +195,305 @@
                             </ul>
                             <img src="images/home.png" alt="home" class="profit__image">
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <h3 class="section__title section__title_center">
+                        Наші проекти
+                    </h3>
+                </div>
+                    <div class="projects__slider swiper">
+                        <div class=" swiper-wrapper">
+                            <div class="project__item swiper-slide">
+                                    <div class="swiper images__slider">
+                                        <div class="swiper-wrapper">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item">
+                                            <img src="images/project-3.jpg" alt="home" class="images__slider-item">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item">
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="project__content">
+                                        <h5 class="project__title">
+                                            Будинок «Еверест»
+                                        </h5>
+                                        <ul class="project__list">
+                                            <li class="project__list-item">
+                                                Площа: 180 м2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Поверхів: 2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Кімнат: 6
+                                            </li>
+                                            <li class="project__list-item">
+                                                Розмір: 12x12
+                                            </li>
+                                        </ul>
+                                        <div class="project__block">
+                                            <div class="project__price">
+                                                <p>
+                                                    Вартість робіт
+                                                </p>
+                                                <span>
+                                                    2 000 000 грн
+                                                </span>
+                                            </div>
+                                            <a href="#" class="project__price-link">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.8445 9.65804L12.0934 7.90693L9.24005 5.05359C8.6356 4.45804 7.60449 4.8847 7.60449 5.73804V11.2758L7.60449 16.2625C7.60449 17.1158 8.6356 17.5425 9.24005 16.938L13.8445 12.3336C14.5823 11.6047 14.5823 10.3958 13.8445 9.65804Z" fill="#1F252D"/>
+                                                </svg>                                                                                                        
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project__item swiper-slide">
+                                    <div class="swiper images__slider">
+                                        <div class="swiper-wrapper">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-3.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="project__content">
+                                        <h5 class="project__title">
+                                            Будинок «Еверест»
+                                        </h5>
+                                        <ul class="project__list">
+                                            <li class="project__list-item">
+                                                Площа: 180 м2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Поверхів: 2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Кімнат: 6
+                                            </li>
+                                            <li class="project__list-item">
+                                                Розмір: 12x12
+                                            </li>
+                                        </ul>
+                                        <div class="project__block">
+                                            <div class="project__price">
+                                                <p>
+                                                    Вартість робіт
+                                                </p>
+                                                <span>
+                                                    2 000 000 грн
+                                                </span>
+                                            </div>
+                                            <a href="#" class="project__price-link">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.8445 9.65804L12.0934 7.90693L9.24005 5.05359C8.6356 4.45804 7.60449 4.8847 7.60449 5.73804V11.2758L7.60449 16.2625C7.60449 17.1158 8.6356 17.5425 9.24005 16.938L13.8445 12.3336C14.5823 11.6047 14.5823 10.3958 13.8445 9.65804Z" fill="#1F252D"/>
+                                                </svg>                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project__item swiper-slide">
+                                    <div class="swiper images__slider">
+                                        <div class="swiper-wrapper">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-3.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="project__content">
+                                        <h5 class="project__title">
+                                            Будинок «Еверест»
+                                        </h5>
+                                        <ul class="project__list">
+                                            <li class="project__list-item">
+                                                Площа: 180 м2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Поверхів: 2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Кімнат: 6
+                                            </li>
+                                            <li class="project__list-item">
+                                                Розмір: 12x12
+                                            </li>
+                                        </ul>
+                                        <div class="project__block">
+                                            <div class="project__price">
+                                                <p>
+                                                    Вартість робіт
+                                                </p>
+                                                <span>
+                                                    2 000 000 грн
+                                                </span>
+                                            </div>
+                                            <a href="#" class="project__price-link">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.8445 9.65804L12.0934 7.90693L9.24005 5.05359C8.6356 4.45804 7.60449 4.8847 7.60449 5.73804V11.2758L7.60449 16.2625C7.60449 17.1158 8.6356 17.5425 9.24005 16.938L13.8445 12.3336C14.5823 11.6047 14.5823 10.3958 13.8445 9.65804Z" fill="#1F252D"/>
+                                                </svg>                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project__item swiper-slide">
+                                    <div class="swiper images__slider">
+                                        <div class="swiper-wrapper">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-3.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="project__content">
+                                        <h5 class="project__title">
+                                            Будинок «Еверест»
+                                        </h5>
+                                        <ul class="project__list">
+                                            <li class="project__list-item">
+                                                Площа: 180 м2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Поверхів: 2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Кімнат: 6
+                                            </li>
+                                            <li class="project__list-item">
+                                                Розмір: 12x12
+                                            </li>
+                                        </ul>
+                                        <div class="project__block">
+                                            <div class="project__price">
+                                                <p>
+                                                    Вартість робіт
+                                                </p>
+                                                <span>
+                                                    2 000 000 грн
+                                                </span>
+                                            </div>
+                                            <a href="#" class="project__price-link">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.8445 9.65804L12.0934 7.90693L9.24005 5.05359C8.6356 4.45804 7.60449 4.8847 7.60449 5.73804V11.2758L7.60449 16.2625C7.60449 17.1158 8.6356 17.5425 9.24005 16.938L13.8445 12.3336C14.5823 11.6047 14.5823 10.3958 13.8445 9.65804Z" fill="#1F252D"/>
+                                                </svg>                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project__item swiper-slide">
+                                    <div class="swiper images__slider">
+                                        <div class="swiper-wrapper">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-3.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="project__content">
+                                        <h5 class="project__title">
+                                            Будинок «Еверест»
+                                        </h5>
+                                        <ul class="project__list">
+                                            <li class="project__list-item">
+                                                Площа: 180 м2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Поверхів: 2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Кімнат: 6
+                                            </li>
+                                            <li class="project__list-item">
+                                                Розмір: 12x12
+                                            </li>
+                                        </ul>
+                                        <div class="project__block">
+                                            <div class="project__price">
+                                                <p>
+                                                    Вартість робіт
+                                                </p>
+                                                <span>
+                                                    2 000 000 грн
+                                                </span>
+                                            </div>
+                                            <a href="#" class="project__price-link">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.8445 9.65804L12.0934 7.90693L9.24005 5.05359C8.6356 4.45804 7.60449 4.8847 7.60449 5.73804V11.2758L7.60449 16.2625C7.60449 17.1158 8.6356 17.5425 9.24005 16.938L13.8445 12.3336C14.5823 11.6047 14.5823 10.3958 13.8445 9.65804Z" fill="#1F252D"/>
+                                                </svg>                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="project__item swiper-slide">
+                                    <div class="swiper images__slider">
+                                        <div class="swiper-wrapper">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-3.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project.jpg" alt="home" class="images__slider-item swiper-slide">
+                                            <img src="images/project-2.jpg" alt="home" class="images__slider-item swiper-slide">
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="project__content">
+                                        <h5 class="project__title">
+                                            Будинок «Еверест»
+                                        </h5>
+                                        <ul class="project__list">
+                                            <li class="project__list-item">
+                                                Площа: 180 м2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Поверхів: 2
+                                            </li>
+                                            <li class="project__list-item">
+                                                Кімнат: 6
+                                            </li>
+                                            <li class="project__list-item">
+                                                Розмір: 12x12
+                                            </li>
+                                        </ul>
+                                        <div class="project__block">
+                                            <div class="project__price">
+                                                <p>
+                                                    Вартість робіт
+                                                </p>
+                                                <span>
+                                                    2 000 000 грн
+                                                </span>
+                                            </div>
+                                            <a href="#" class="project__price-link">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.8445 9.65804L12.0934 7.90693L9.24005 5.05359C8.6356 4.45804 7.60449 4.8847 7.60449 5.73804V11.2758L7.60449 16.2625C7.60449 17.1158 8.6356 17.5425 9.24005 16.938L13.8445 12.3336C14.5823 11.6047 14.5823 10.3958 13.8445 9.65804Z" fill="#1F252D"/>
+                                                </svg>                                                    
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                <div class="container">
+                    <div class="projects__button">
+                        <a href="#" class="projects__btn btn">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.511 9.65804L11.7599 7.90693L8.90655 5.05359C8.30211 4.45804 7.271 4.8847 7.271 5.73804V11.2758L7.271 16.2625C7.271 17.1158 8.30211 17.5425 8.90655 16.938L13.511 12.3336C14.2488 11.6047 14.2488 10.3958 13.511 9.65804Z" fill="white"/>
+                            </svg>                            
+                            <p>Дивитись усі проекти</p>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -449,7 +749,7 @@
         </footer>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
