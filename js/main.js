@@ -82,12 +82,22 @@ playPauseButton.addEventListener('click', ()=>  {
  
 // swiper project
 const swiper = new Swiper('.projects__slider', {
-  spaceBetween: 24,
-    slidesPerView: 4,
+    spaceBetween: 10,
+    slidesPerView: 2,
     centeredSlides: true,
     loop: true,
-    centeredSlidesBounds: true,
     allowTouchMove: false,
+
+    breakpoints: {
+      640: {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      }
+    },
   
     navigation: {
       nextEl: '.swiper-button-next',
