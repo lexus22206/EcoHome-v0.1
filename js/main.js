@@ -86,7 +86,6 @@ const swiper = new Swiper('.projects__slider', {
     slidesPerView: 2,
     centeredSlides: true,
     loop: true,
-    allowTouchMove: false,
 
     breakpoints: {
       640: {

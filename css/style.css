@@ -942,6 +942,9 @@ footer {
     .profit__link p {
         font-size: 14px;
     }
+    .projects__slider::after, .projects__slider::before { 
+        width: 18%;
+    }
     .project__title {
         font-size: 16px;
     }
@@ -1166,5 +1169,31 @@ footer {
     }
     .profit__item p {
         font-size: 12px;
+    }
+    .projects__slider {
+        margin-bottom: 24px;
+    }
+    .projects__slider::after, .projects__slider::before {
+        width: 23%;
+    }
+    .project__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .project__list {
+        font-size: 11px;
+        gap: 5px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .project__price p {
+        font-size: 8px;
+    }
+    .project__price span {
+        font-size: 14px;
+    }
+    .project__price-link {
+        width: 26px;
+        height: 26px;
     }
 }
