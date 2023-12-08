@@ -573,6 +573,7 @@ body._touch .build__bg {
     top: 0;
     left: 0;
     z-index: 5;
+    visibility: hidden;
 }
 
 .projects__slider::after {
@@ -585,6 +586,7 @@ body._touch .build__bg {
     top: 0;
     right: 0;
     z-index: 5;
+    visibility: hidden;
 }
 
 .swiper-button-prev {
