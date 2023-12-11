@@ -637,15 +637,18 @@ body._touch .build__bg {
 }
 
 .project__item {
+    display: grid;
     max-width: 380px;
     background-color: #FFFFFF;
     border-radius: 12px;
+    height: auto;
 }
 
 .images__slider {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 18px;
+    height: fit-content;
 }
 
 .images__slider-item {
@@ -673,7 +676,10 @@ body._touch .build__bg {
 }
 
 .project__content {
+    display: grid;
+    align-items: end;
     padding: 18px;
+
 }
 
 .project__title {
