@@ -158,6 +158,10 @@ sup {
     position: relative;
 }
 
+body._touch .btn__video {
+    display: none;
+}
+
 /* ._anim-show {
     
 }
