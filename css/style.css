@@ -863,7 +863,7 @@ body._touch .build__bg {
 .categories__video {
     max-width: 509px;
     max-height: 351px;
-    border-radius: 24px;
+    border-radius: 12px;
 }
 
 
@@ -1072,6 +1072,19 @@ footer {
         width: 42px;
         height: 42px;
     }
+    .categories__title {
+        font-size: 42px;
+    }
+    .categories__subtitle {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .categories__text {
+        font-size: 14px;
+    }
+    .categories__video {
+        max-width: 360px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1147,6 +1160,16 @@ footer {
     }
     .swiper-button-next, .swiper-button-prev {
         display: none;
+    }
+    .categories__content {
+        flex-wrap: wrap;
+    }
+    .categories__description {
+        text-align: center;
+        margin: 0 0 16px 0;
+    }
+    .categories__video {
+        max-width: 100%;
     }
 }
 
@@ -1302,5 +1325,14 @@ footer {
     .project__price-link {
         width: 26px;
         height: 26px;
+    }
+    .categories__title {
+        font-size: 38px;
+    }
+    .categories__subtitle {
+        font-size: 28px;
+    }
+    .categories__text {
+        font-size: 12px;
     }
 }
