@@ -872,6 +872,70 @@ body._touch .build__bg {
 
 
 
+/* section construction */
+.construction {
+    background: #FAFAFA;
+    padding: 50px 0;
+}
+
+.construction__content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 36px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.construction__btn {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1F252D;
+    background: transparent;
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;  
+}
+
+.swiper-slide-thumb-active .construction__btn{
+    border-radius: 12px;
+    background: linear-gradient(0deg, #1F252D 0%, #1F252D 100%), #FFF;
+    color: #FFFFFF;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.swiper__tabs {
+    height: 300px;    
+}
+
+.slider__tabs {
+    height: 100%;
+}
+
+.construction__gallery {
+    width: 100%;
+    height: 100%;   
+}
+
+.construction__gallery-item {
+    width: 100%;
+    height: 100%;
+}
+
+.construction__gallery-item img,
+.construction__gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
 
 /* section footer */
 

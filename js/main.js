@@ -112,6 +112,32 @@ const swiperIn = new Swiper('.images__slider', {
 
 });
 
+// construction swiper
+const swiperTabs = new Swiper(".slider__tabs",  {
+  direction: 'vertical',
+  slidesPerView: 5,
+  watchSlidesProgress: true,
+  
+});
+
+const swiperTab = new Swiper(".construction__gallery",  {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 1.2,
+  coverflowEffect: {
+    slideShadows: true,
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  thumbs: {
+    swiper: swiperTabs,
+  },
+});
+
 // categories tabs
 $('.categories__item').on('click',function(){
   var currTab = $(this).index();
@@ -121,4 +147,9 @@ $('.categories__item').on('click',function(){
 
   $('.categories__content').removeClass('active');
   $('.categories__content').eq(currTab).addClass('active');
-})
+});
+
+
+
+
+
