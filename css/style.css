@@ -913,7 +913,7 @@ body._touch .build__bg {
 }
 
 .construction__gallery {
-    width: 100%;
+    width: calc(32% + 49vw);
     height: 100%;   
 }
 
@@ -1238,6 +1238,12 @@ footer {
     }
     .categories__video {
         max-width: 100%;
+    }
+    .construction__content {
+        grid-template-columns: 100%;
+    }
+    .swiper__tabs {
+        height: 70px;
     }
 }
 
