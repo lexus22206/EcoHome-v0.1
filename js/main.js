@@ -114,10 +114,10 @@ const swiperIn = new Swiper('.images__slider', {
 
 // construction swiper
 const swiperTabs = new Swiper(".slider__tabs",  {
+  allowTouchMove: false,
   direction: 'vertical',
   slidesPerView: 5,
   watchSlidesProgress: true,
-  allowTouchMove: false,
 });
 
 const swiperTab = new Swiper(".construction__gallery",  {
