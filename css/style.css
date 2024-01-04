@@ -905,10 +905,11 @@ body._touch .build__bg {
 }
 
 .swiper__tabs {
-    width: 100%;
+    width: 200px;
     height: 300px;
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    margin: 0 auto;   
 }
 
 .slider__tabs {
