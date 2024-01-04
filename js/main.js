@@ -117,7 +117,7 @@ const swiperTabs = new Swiper(".slider__tabs",  {
   direction: 'vertical',
   slidesPerView: 5,
   watchSlidesProgress: true,
-  
+  allowTouchMove: false,
 });
 
 const swiperTab = new Swiper(".construction__gallery",  {
