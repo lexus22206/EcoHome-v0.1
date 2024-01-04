@@ -905,7 +905,7 @@ body._touch .build__bg {
 }
 
 .swiper__tabs {
-    height: 300px;    
+    height: 100%;    
 }
 
 .slider__tabs {
@@ -1242,8 +1242,14 @@ footer {
     .construction__content {
         grid-template-columns: 100%;
     }
-    .swiper__tabs {
-        height: 70px;
+    .construction__item {
+        text-align: center;
+    }
+    .swiper-slide-thumb-active .construction__btn{
+        font-size: 12px;
+    }
+    .construction__gallery {
+        width: 100%;
     }
 }
 
@@ -1408,5 +1414,8 @@ footer {
     }
     .categories__text {
         font-size: 12px;
+    }
+    .swiper-slide-thumb-active .construction__btn{
+        padding: 8px;
     }
 }
