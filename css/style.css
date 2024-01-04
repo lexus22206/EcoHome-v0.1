@@ -905,10 +905,12 @@ body._touch .build__bg {
 }
 
 .swiper__tabs {
+    width: 100%;
     height: 100%;    
 }
 
 .slider__tabs {
+    width: 100%;
     height: 100%;
 }
 
