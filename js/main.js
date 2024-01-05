@@ -123,7 +123,6 @@ const swiperTabs = new Swiper(".slider__tabs",  {
 
 const swiperTab = new Swiper(".construction__gallery",  {
   effect: "coverflow",
-  loop: true,
   allowTouchMove: false,
   centeredSlides: true,
   slidesPerView: 1.2,
