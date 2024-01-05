@@ -115,14 +115,15 @@ const swiperIn = new Swiper('.images__slider', {
 // construction swiper
 const swiperTabs = new Swiper(".slider__tabs",  {
   direction: 'vertical',
-  allowTouchMove: false,
   slidesPerView: 5,
   watchSlidesProgress: true,
   preventInteractionOnTransition: true,
+  cssMode: true,
 });
 
 const swiperTab = new Swiper(".construction__gallery",  {
   effect: "coverflow",
+  loop: true,
   allowTouchMove: false,
   centeredSlides: true,
   slidesPerView: 1.2,
