@@ -880,7 +880,7 @@ body._touch .build__bg {
 
 .construction__content {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 70%;
     gap: 36px;
     align-items: center;
     justify-content: space-between;
@@ -919,7 +919,7 @@ body._touch .build__bg {
 }
 
 .construction__gallery {
-    width: calc(32% + 49vw);
+    width: calc(29% + 49vw);
     height: 100%;   
 }
 
