@@ -1,6 +1,6 @@
 
 function scrollToSecondSection() {
-  const secondSection = document.getElementById('build');  
+  const secondSection = document.getElementById('about');  
   if (secondSection) {
     secondSection.scrollIntoView({ behavior: 'smooth' });
   }
