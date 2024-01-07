@@ -1,3 +1,12 @@
+
+function scrollToSecondSection() {
+  const secondSection = document.getElementById('about');  
+  if (secondSection) {
+    secondSection.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+document.getElementById('scrollButton').addEventListener('click', scrollToSecondSection);
+
 // pc or touch
 const isMobile = {
   Android: function () {
