@@ -1,4 +1,4 @@
-
+// scroll
 function scrollToSecondSection() {
   const secondSection = document.getElementById('about');  
   if (secondSection) {
