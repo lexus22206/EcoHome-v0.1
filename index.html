@@ -678,60 +678,606 @@
                             <div class="price__slider swiper">
                                 <div class="swiper-wrapper">
                                     <div class="price__slide-item swiper-slide">
-                                        <h4 class="price__slide-title">
-                                            Який будинок ви хочете збудувати?
-                                        </h4>
-                                        <div class="price__slide-option">
-                                            <label for="type">
-                                                <img src="images/block-house.jpg" alt="house" class="price__option-image">
-                                                <input type="radio" name="type" class="price__option-input">
-                                                <p class="price__option-name">
-                                                    Будинок із блоків
-                                                </p>
-                                            </label>
-                                            <label for="type">
-                                                <img src="images/frame-house.jpg" alt="house" class="price__option-image">
-                                                <input type="radio" name="type" class="price__option-input">
-                                                <p class="price__option-name">
-                                                    Каркасний будинок
-                                                </p>
-                                            </label>
-                                            <label for="type">
-                                                <img src="images/brick-house.jpg" alt="house" class="price__option-image">
-                                                <input type="radio" name="type" class="price__option-input">
-                                                <p class="price__option-name">
-                                                    Цегляний будинок
-                                                </p>
-                                            </label>
-                                            <label for="type">
-                                                <img src="images/home-profiled-timber.jpg" alt="house" class="price__option-image">
-                                                <input type="radio" name="type" class="price__option-input">
-                                                <p class="price__option-name">
-                                                    Будинок із профільованого бруса
-                                                </p>
-                                            </label>
-                                            <label for="type">
-                                                <img src="images/house-rounded-timber.jpg" alt="house" class="price__option-image">
-                                                <input type="radio" name="type" class="price__option-input">
-                                                <p class="price__option-name">
-                                                    Будинок із циліндринованого бруса
-                                                </p>
-                                            </label>
-                                            <label for="type">
-                                                <img src="images/house-sip-panel.jpg" alt="house" class="price__option-image">
-                                                <input type="radio" name="type" class="price__option-input">
-                                                <p class="price__option-name">
-                                                    Будинок із SIP-панелей
-                                                </p>
-                                            </label>
-                                        </div>
-                                        <div class="swiper-scrollbar"></div>
-                                        <div class="swiper-pagination"></div>
-                                        <div class="price__wrapper-button">
-                                            <div class="swiper-button-next"></div>
-                                            <div class="swiper-button-prev"></div>
-                                        </div>
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Який будинок ви хочете збудувати?
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_three-columns">
+                                                <div class="price__option-wrapper">
+                                                    <label for="material-block">
+                                                        <img src="images/block-house.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="material" class="price__option-input" id="material-block" value="block-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <p>
+                                                        Будинок із блоків
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="material-frame">
+                                                        <img src="images/frame-house.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="material" class="price__option-input" id="material-frame" value="frame-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>   
+                                                    </label>
+                                                    <p>
+                                                        Каркасний будинок
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="material-brick">
+                                                        <img src="images/brick-house.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="material" class="price__option-input" id="material-brick" value="brick-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <p>
+                                                        Цегляний будинок
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="material-profiled-timber">
+                                                        <img src="images/home-profiled-timber.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="material" class="price__option-input" id="material-profiled-timber" value="home-profiled-timber">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Будинок із профільованого бруса
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="material-rounded-timber">
+                                                        <img src="images/house-rounded-timber.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="material" class="price__option-input" id="material-rounded-timber" value="house-rounded-timber">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Будинок із циліндринованого бруса
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="material-sip-panel">
+                                                        <img src="images/house-sip-panel.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="material" class="price__option-input" id="material-sip-panel" value="house-sip-panel">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Будинок із SIP-панелей
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>    
                                     </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Скільки поверхів вам потрібно?
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_three-rows">
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="one-floor">
+                                                        <input type="radio" name="floors" class="price__option-input" id="one-floor" value="block-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        1 поверх
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="one-floor-attic">
+                                                        <input type="radio" name="floors" class="price__option-input" id="one-floor-attic" value="home-profiled-timber">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        1 поверх + мансарда
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="two-floors">
+                                                        <input type="radio" name="floors" class="price__option-input" id="two-floors" value="frame-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        2 поверх
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="two-floors-attic">
+                                                        <input type="radio" name="floors" class="price__option-input" id="two-floors-attic" value="house-rounded-timber">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        2 поверх + мансарда
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="three-floors">
+                                                        <input type="radio" name="floors" class="price__option-input" id="three-floors" value="brick-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        3 поверх
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="floors-undefined">
+                                                        <input type="radio" name="floors" class="price__option-input" id="floors-undefined" value="house-sip-panel">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Ще не визначились
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Чи є у вас ділянка?
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_three-rows">
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="plot">
+                                                        <input type="radio" name="plot" class="price__option-input" id="plot" value="block-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Ділянка є, в межах міста
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="plot-for-100">
+                                                        <input type="radio" name="plot" class="price__option-input" id="plot-for-100" value="frame-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Ділянка є за містом далі 100 км
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="plot-up-100">
+                                                        <input type="radio" name="plot" class="price__option-input" id="plot-up-100" value="brick-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Ділянка є за містом до 100 км.
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="no-plot">
+                                                        <input type="radio" name="plot" class="price__option-input" id="no-plot" value="home-profiled-timber">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Ділянки немає
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Виберіть бажані розміри будинку
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_three-rows">
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="size-up-100">
+                                                        <input type="radio" name="size" class="price__option-input" id="size-up-100" value="block-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Будинок до 100 кв.
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="size-100-150">
+                                                        <input type="radio" name="size" class="price__option-input" id="size-100-150" value="frame-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        До 100-150 кв.
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="size-150-200">
+                                                        <input type="radio" name="size" class="price__option-input" id="size-150-200" value="brick-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        До 150-200 кв.
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="size-for-200">
+                                                        <input type="radio" name="size" class="price__option-input" id="size-for-200" value="home-profiled-timber">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Понад 200 кв.м.
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Коли плануєте будівництво?
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_three-rows">
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="start-soon">
+                                                        <input type="radio" name="start" class="price__option-input" id="start-soon" value="block-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Найближчим часом
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="start-this-year">
+                                                        <input type="radio" name="start" class="price__option-input" id="start-this-year" value="frame-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        В цьому році
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="start-next-year">
+                                                        <input type="radio" name="start" class="price__option-input" id="start-next-year" value="brick-house">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        В наступному році
+                                                    </label>
+                                                </div>
+                                                <div class="price__option-wrapper_no-img">
+                                                    <label for="start-undefined">
+                                                        <input type="radio" name="start" class="price__option-input" id="start-undefined" value="home-profiled-timber">
+                                                        <span class="check__style check__style_three-rows">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                        Ще не визначились
+                                                    </label>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Який стиль ближчий?
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_four-columns">
+                                                <div class="price__option-wrapper">
+                                                    <label for="chalet-style">
+                                                        <img src="images/house-chalet-style.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="chalet-style" value="block-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <p>
+                                                        Шале
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="finnish-classic-style">
+                                                        <img src="images/house-style-finnish-classic.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="finnish-classic-style" value="frame-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>   
+                                                    </label>
+                                                    <p>
+                                                        Фінська класика
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="wright-style">
+                                                        <img src="images/house-wright-style.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="wright-style" value="brick-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <p>
+                                                        Райт
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="modern-style">
+                                                        <img src="images/modern-style-house.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="modern-style" value="home-profiled-timber">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Модерн
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="bauhaus-style">
+                                                        <img src="images/bauhaus-style-house.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="bauhaus-style" value="house-rounded-timber">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Баухаус
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="american-style">
+                                                        <img src="images/american-style-house.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="american-style" value="house-sip-panel">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Американський стиль
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="half-timbered-style">
+                                                        <img src="images/house-style-half-timbered.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="half-timbered-style" value="house-sip-panel">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Фахверк
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="classic-style">
+                                                        <img src="images/house-classic-style.jpg" alt="house" class="price__option-image">
+                                                        <input type="radio" name="style" class="price__option-input" id="classic-style" value="house-sip-panel">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>                                                    
+                                                    </label>
+                                                    <p>
+                                                        Класичний стиль
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper">
+                                            <h4 class="price__slide-title">
+                                                Чи потрібні додаткові будови на ділянці?
+                                            </h4>
+                                            <div class="price__slide-option price__slide-option_three-columns">
+                                                <div class="price__option-wrapper">
+                                                    <label for="structure-garage">
+                                                        <img src="images/structure-garage.jpg" alt="garage" class="price__option-image">
+                                                        <input type="radio" name="structure" class="price__option-input" id="structure-garage" value="block-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <p>
+                                                        Гараж
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="structure-sauna">
+                                                        <img src="images/structure-sauna.jpg" alt="sauna" class="price__option-image">
+                                                        <input type="radio" name="structure" class="price__option-input" id="structure-sauna" value="frame-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>   
+                                                    </label>
+                                                    <p>
+                                                        Сауна
+                                                    </p>
+                                                </div>
+                                                <div class="price__option-wrapper">
+                                                    <label for="structure-bath">
+                                                        <img src="images/structure-bath.jpg" alt="bath" class="price__option-image">
+                                                        <input type="radio" name="structure" class="price__option-input" id="structure-bath" value="brick-house">
+                                                        <span class="check__style">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <circle cx="12" cy="12" r="9" stroke="white"/>
+                                                                <path d="M8 12L11 15L16 9" stroke="white"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <p>
+                                                        Лазня
+                                                    </p>
+                                                </div>                                                                                                
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="price__slide-item swiper-slide">
+                                        <div class="price__slide-wrapper price__slide-wrapper_end">
+                                            <h4 class="price__slide-title">
+                                                Ми отримали дані та приступаємо до розрахунків
+                                            </h4>
+                                            <h5 class="price__slide-subtitle">
+                                                Вкажіть куди надіслати розрахунок вартості?
+                                            </h5>
+                                            <div class="price__slide-social">
+                                                <label for="social-telegram">
+                                                    <input type="radio" name="social" id="social-telegram" class="price__option-input">
+                                                    <span class="check__style-social">
+                                                        <img src="images/telegram-icon.png" alt="telegram-icon">
+                                                    </span>
+                                                    Telegram
+                                                </label>
+                                                <label for="social-viber">
+                                                    <input type="radio" name="social" id="social-viber" class="price__option-input">
+                                                    <span class="check__style-social">
+                                                        <img src="images/viber-icon.png" alt="viber-icon">
+                                                    </span>
+                                                    Viber
+                                                </label>
+                                                <label for="social-whatsapp">
+                                                    <input type="radio" name="social" id="social-whatsapp" class="price__option-input">
+                                                    <span class="check__style-social">
+                                                        <img src="images/whatsapp-icon.png" alt="whatsapp-icon">
+                                                    </span>
+                                                    What’s App
+                                                </label>
+                                            </div>
+                                            <div class="price__slide-form">
+                                                <input class="price__form-input price__form-input_white" type="text" name="firstName" placeholder="Ваше ім'я" required>
+                                                <input class="price__form-input price__form-input_white" type="tel" name="phoneNumber" placeholder="Телефон" required>
+                                                <input class="price__form-input" type="email" name="mailAddress" placeholder="Електронна пошта (не обов'язково)">
+                                                <button type="submit" class="price__form-submit btn">
+                                                    <img src="images/arrow-white.svg" alt="arrow">
+                                                    Залишити заявку
+                                                </button>                                                                                                
+                                            </div>
+                                            <p class="privacy__policy">
+                                                Натискаючи на кнопку, ви погоджуєтесь з умовами
+                                                <a href="#" class="privacy__policy-linc">
+                                                    політики конфіденційності
+                                                </a> 
+                                                та обробки персональних даних
+                                            </p>
+                                        </div>    
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-pagination price__slider-progress"></div>
+                                <div class="price__wrapper-button">
+                                    <div class="swiper-button-next">Далі</div>
+                                    
+                                </div>
+                                <div class="price__slider-fraction">
+                                    <div class="price__slider-current">01</div>
+                                    <div class="price__slider-sepparator"> / </div>
+                                    <div class="price__slider-total">01</div>
                                 </div>
                             </div>
                         </form>

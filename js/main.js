@@ -159,7 +159,60 @@ $('.categories__item').on('click',function(){
   $('.categories__content').eq(currTab).addClass('active');
 });
 
+// form price swiper
+const swiperForm = new Swiper('.price__slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  effect: "creative",
+  allowTouchMove: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: 'progressbar',
+  },
+  ignoreLastSwiperSlide: true,
+  on: {
+    slideChange: function () {
+      const currentSlide = this.activeIndex;
+      const swiper = this;
+      if (currentSlide === swiper.slides.length - 1) { 
+        swiper.pagination.el.style.display = 'none';
+        swiper.navigation.nextEl.style.display = 'none'; 
+      } else {
+        swiper.pagination.el.style.display = '';
+        swiper.navigation.nextEl.style.display = '';        
+      }
+    },  
+  },
+  mousewheel: false,
+  keyboard: false, 
+});
 
+let mySliderAllSliders = document.querySelector('.price__slider-total');
+let mySliderCurrentSlide = document.querySelector('.price__slider-current');
 
+swiperForm.on('slideChange', function (){
+  let currentSlide = (++swiperForm.realIndex).toString().padStart(2, '0');
+  mySliderCurrentSlide.innerHTML = currentSlide; 
+
+  let totalSlides = (swiperForm.slides.length - 1).toString().padStart(2, '0');
+  mySliderAllSliders.innerHTML = totalSlides;
+
+  if (swiperForm.isEnd) {
+    document.querySelector('.price__slider-fraction').style.display = 'none';
+  } else {
+    document.querySelector('.price__slider-fraction').style.display = 'flex';
+  }
+  
+  let progressBar = document.querySelector('.swiper-pagination-progressbar .swiper-pagination-progressbar-fill');
+  let progressValue = (currentSlide / totalSlides) * 100;
+  progressBar.style.transform = `translate(0, 0) scaleX(${progressValue / 100})`;
+});
+
+let totalSlides = (swiperForm.slides.length - 1).toString().padStart(2, '0');
+mySliderAllSliders.innerHTML = totalSlides;
 
 
