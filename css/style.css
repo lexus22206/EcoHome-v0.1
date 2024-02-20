@@ -1613,9 +1613,26 @@ footer {
     .price__form-submit {
         margin: 20px auto 18px;
     }
+    .price__wrapper-button .swiper-button-next {
+        --swiper-navigation-size: 40px;
+        padding: 0 67px 0 50px;
+    }
+    .price__wrapper-button .swiper-button-next::after {
+        top: 17%;
+        left: 70%;
+    }
+    .price__slider-fraction {
+        bottom: 26px;
+    }
 }
 
 @media (max-width: 640px) {
+    .section__title {
+        font-size: 24px;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
     .menu__list {
         position: fixed;
         top: 0;
@@ -1697,9 +1714,47 @@ footer {
         padding-bottom: 12px;
         margin-bottom: 12px;
     }
-
+    .price__option-wrapper p {
+        font-size: 10px;
+    }
+    .check__style {
+        width: 22px;
+        height: 22px;
+    }
+    .check__style svg{
+        width: 18px;
+        height: 18px;
+    }
+    .price__slide-option {
+        gap: 10px;
+    }
     .price__option-wrapper_no-img label {
         height: 20px;
+    }
+    .price__slide-title {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .price__slide-subtitle {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .price__slide-social {
+        margin-bottom: 10px;
+    }
+    .check__style-social img {
+        width: 30px;
+        height: 30px;
+    }
+    .price__form-input {
+        font-size: 12px;
+    }
+    .price__form-input + .price__form-input {
+        margin-top: 10px;
+    }
+    .privacy__policy {
+        font-size: 10px;
+        max-width: 300px;
     }
 }
 
