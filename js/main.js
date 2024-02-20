@@ -163,8 +163,8 @@ $('.categories__item').on('click',function(){
 const swiperForm = new Swiper('.price__slider', {
   slidesPerView: 1,
   centeredSlides: true,
-  effect: "creative",
-  allowTouchMove: false,
+  // effect: "creative",
+  // allowTouchMove: false,
   navigation: {
     nextEl: ".swiper-button-next",
     
@@ -187,8 +187,6 @@ const swiperForm = new Swiper('.price__slider', {
       }
     },  
   },
-  mousewheel: false,
-  keyboard: false, 
 });
 
 let mySliderAllSliders = document.querySelector('.price__slider-total');
