@@ -1371,9 +1371,9 @@ footer {
     .btn {
         padding: 18px 36px;
     }
-
-
-
+    .price__slide-wrapper {
+        padding: 25px 20px 90px;
+    }
     .price__slide-subtitle {
         margin-bottom: 20px;
     }
@@ -1470,6 +1470,9 @@ footer {
     }
     .price__slide-title {
         font-size: 22px;
+    }
+    .price__slide-wrapper {
+        padding: 25px 20px 50px;
     }
     .price__option-wrapper label {
         font-size: 14px;
@@ -1583,6 +1586,9 @@ footer {
     }
     .price__subtitle {
         font-size: 12px;
+    }
+    .price__slide-wrapper {
+        padding: 25px 20px 0px;
     }
     .price__option-wrapper label,
     .price__option-wrapper p {
@@ -1731,6 +1737,17 @@ footer {
     .price__option-wrapper_no-img label {
         height: 20px;
     }
+    .price__slider-fraction {
+        bottom: 18px;
+    }
+    .price__wrapper-button .swiper-button-next {
+        --swiper-navigation-size: 33px;
+        padding: 0px 50px 0 41px;
+        font-size: 12px;
+    }
+    .price__wrapper-button .swiper-button-next::after {
+        top: 27%;
+    }
     .price__slide-title {
         font-size: 17px;
         margin-bottom: 10px;
@@ -1759,6 +1776,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .btn {
+        padding: 7px 12px;
+    }
     .build__title {
         font-size: 40px;
     }
@@ -1793,7 +1813,7 @@ footer {
         padding: 60px 0;
     }
     .section__title {
-        font-size: 26px;
+        font-size: 22px;
     }
     .estimate__text {
         font-size: 12px;
@@ -1838,5 +1858,40 @@ footer {
     }
     .swiper-slide-thumb-active .construction__btn{
         padding: 8px;
+    }
+    .price__slide-option_four-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+    .price__slide-option_three-rows {
+        grid-template-columns: 1fr;
+    }
+    .price__slide-option_three-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+    .price__slide-wrapper {
+        padding: 25px 20px 80px;
+    }
+    .price__option-wrapper_no-img label {
+        padding: 20px 20px 20px 40px;
+    }
+    .price__option-image {
+        border-radius: 5px;
+        margin-bottom: 12px;
+    }
+    .price__subtitle {
+        font-size: 10px;
+    }
+    .price__slide-wrapper_end {
+        padding: 20px;
+    }
+    .price__slide-form {
+        max-width: 178px;
+    }
+    .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+        width: 90%;
+        left: 5%;
+    }
+    .price__slider-fraction {
+        bottom: 29px;
     }
 }
