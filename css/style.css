@@ -1014,6 +1014,7 @@ body._touch .build__bg {
     height: 94px;
     display: flex;
     align-items: center;
+    text-align: left;
 }
 
 .price__option-image {
@@ -1736,6 +1737,7 @@ footer {
     }
     .price__option-wrapper_no-img label {
         height: 20px;
+        padding: 30px 30px 30px 42px;
     }
     .price__slider-fraction {
         bottom: 18px;
@@ -1872,7 +1874,7 @@ footer {
         padding: 25px 20px 80px;
     }
     .price__option-wrapper_no-img label {
-        padding: 20px 20px 20px 40px;
+        padding: 20px 20px 20px 55px;
     }
     .price__option-image {
         border-radius: 5px;
@@ -1890,8 +1892,12 @@ footer {
     .swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
         width: 90%;
         left: 5%;
+        top: 90%;
     }
     .price__slider-fraction {
-        bottom: 29px;
+        bottom: 23px;
+    }
+    .price__wrapper-button .swiper-button-next {
+        --swiper-navigation-top-offset: 95%;
     }
 }
