@@ -87,7 +87,7 @@ $(document).on('click','.btn__video',function(){
 // swiper project
 const swiper = new Swiper('.projects__slider', {
   spaceBetween: 10,
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   centeredSlides: true,
   loop: true,
 
