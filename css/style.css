@@ -1874,6 +1874,7 @@ footer {
         padding: 25px 20px 80px;
     }
     .price__option-wrapper_no-img label {
+        height: 50px;
         padding: 20px 20px 20px 55px;
     }
     .price__option-image {
