@@ -84,6 +84,7 @@ ul[class] {
 
 img {
     max-width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -634,13 +635,14 @@ body._touch .build__bg {
 
 .images__slider {
     width: 100%;
+    height: 100%;
     border-radius: 12px;
     margin-bottom: 18px;
-    height: fit-content;
 }
 
 .images__slider-item {
-    width: 380px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -984,8 +986,12 @@ body._touch .build__bg {
 }
 
 .price__option-image {
-    border-radius: 12px;
     margin-bottom: 22px;
+    display: block;
+}
+
+.price__option-image img{
+    border-radius: 12px;
 }
 .price__option-input {
     position: absolute;
