@@ -355,6 +355,7 @@ body._touch .build__bg {
     animation: rotate 10s ease-in-out 2.5s infinite;
     border-radius: 50%;
     cursor: pointer;
+    height: auto;
 }
 
 
@@ -376,9 +377,10 @@ body._touch .build__bg {
     align-items: center;
 }
 
-.about__logo-img {
-    width: 63px;
-    height: 23px;
+.about__logo-link {
+    display: block;
+    width: 98px;
+    height: 35px;
     transform: rotate(-90deg);
 }
 
