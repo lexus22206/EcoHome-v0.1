@@ -41,12 +41,12 @@ if (isMobile.any()) {
   // footer menu
   const menuBtns = document.querySelectorAll('.footer__menu-title')
 
-  menuBtns.forEach.call(menuBtns, function (menuBtns) {
-    menuBtns.addEventListener('click', function () {
+  menuBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
 
-      const menuList = menuBtns.parentElement.querySelector('.footer__submenu-list')
+      const menuList = btn.parentElement.querySelector('.footer__submenu-list')
 
-      menuBtns.classList.toggle('_active')
+      btn.classList.toggle('_active')
       menuList.classList.toggle('_active')
 
       if (menuList.classList.contains('_visible')) {
