@@ -49,7 +49,7 @@ if (isMobile.any()) {
       btn.classList.toggle('_active')
       menuList.classList.toggle('_active')
 
-      if (menuList.classList.contains('_visible')) {
+      if (menuList.classList.contains('_active')) {
         menuList.style.maxHeight = menuList.scrollHeight + 'px'
       } else {
         menuList.style.maxHeight = null
