@@ -84,6 +84,24 @@ $(document).on('click','.btn__video',function(){
   }
 });
 
+$(function () {
+  const avifSupported = document.createElement('canvas').toDataUrl('image/avif').indexOf('data:image/avif') === 0;
+  const avifSupported = document.createElement('canvas').toDataUrl('image/webp').indexOf('data:image/webp') === 0;
+  $('video').each(function () {
+    const $video = $(this);
+    const posterAvif = $video.data('poster-avif');
+    const posterWebp = $video.data('poster-webp');
+    const posterPng = $video.data('poster-png');
+
+    if(avifSupported && posterAvif) {
+      $video.attr('poster', posterAvif);
+    } else if (webpSupported && posterWebp) {
+      $video.attr('poster', posterWebp);
+    } else if (posterPng) {
+      $video.attr('poster', posterPng);
+    }
+  });
+});
 // swiper project
 const swiper = new Swiper('.projects__slider', {
   spaceBetween: 10,
