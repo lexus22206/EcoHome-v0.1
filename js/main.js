@@ -85,8 +85,8 @@ $(document).on('click','.btn__video',function(){
 });
 
 $(function () {
-  const avifSupported = document.createElement('canvas').toDataUrl('image/avif').indexOf('data:image/avif') === 0;
-  const webpSupported = document.createElement('canvas').toDataUrl('image/webp').indexOf('data:image/webp') === 0;
+  const avifSupported = document.createElement('canvas').toDataURL('image/avif').indexOf('data:image/avif') === 0;
+  const webpSupported = document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0;
   $('video').each(function () {
     const $video = $(this);
     const posterAvif = $video.data('poster-avif');
